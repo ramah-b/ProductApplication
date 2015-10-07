@@ -55,7 +55,7 @@ public class Product
     }
 
     // create public access for the count variable
-    public static int getCount()   
+	public static int getCount()   
     {                              
         return count;
     }

@@ -1,24 +1,25 @@
 package myProducts;
 
 public class Book extends Product {
-	
+
 	private String author;
-	
-	public Book(){
+
+	public Book() {
 		super();
 		this.author = "";
-		
+
 	}
 
-	  public void setAuthor(String author)
-	    {
-	        this.author = author;
-	    }
+	public void setAuthor(String author) {
+		this.author = author;
+	}
 
-	    @Override
-	    public String toString()
-	    {
-	        return super.toString() + "Author:      " +
-	            author + "\n";
-	    }
+	public String toString(String detail) {
+		if (detail.equals("d")) {
+			return super.toString() + "Author:      " + author + "\n";
+
+		} else {
+			return super.toString() + "\n";
+		}
+	}
 }

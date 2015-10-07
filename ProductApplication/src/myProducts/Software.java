@@ -1,28 +1,28 @@
 package myProducts;
 
-public class Software extends Product{
+public class Software extends Product {
 	private String version;
-	
-	public Software(){
+
+	public Software() {
 		super();
 		this.version = "";
-		
-	
+
 	}
 
 	public String getVersion() {
 		return version;
 	}
-	
-	public void setVersion(String version){
+
+	public void setVersion(String version) {
 		this.version = version;
 	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString() + "Version:     " +
-            version + "\n";
-    }
-	
+	public String toString(String detail) {
+		if (detail.equals("d")) {
+			return super.toString() + "Version:     " + version + "\n";
+		} else {
+			return super.toString();
+		}
+	}
+
 }
