@@ -64,4 +64,7 @@ public class Product
     	NumberFormat currency = NumberFormat.getCurrencyInstance();
 		return currency.format(price); 
     }
+    public String classType(){
+    	return "This is a product.";
+    }
 }

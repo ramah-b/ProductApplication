@@ -24,5 +24,8 @@ public class Software extends Product {
 			return super.toString();
 		}
 	}
+	public String classType(){
+    	return "This is a Software.";
+    }
 
 }

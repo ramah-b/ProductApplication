@@ -66,6 +66,7 @@ public class ProductApp {
 			}
 
 			// Print the Book Objects
+			System.out.println(bookArray.get(0).classType());
 			System.out.println("\nThe number of books enteries were: "
 					+ Product.getCount());
 			System.out
@@ -134,6 +135,7 @@ public class ProductApp {
 			}
 
 			// Print the Software Objects
+			System.out.println(softwareArray.get(0).classType());
 			System.out.println("\nThe number of Software enteries were: "
 					+ Product.getCount());
 

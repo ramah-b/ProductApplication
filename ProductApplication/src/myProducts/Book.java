@@ -21,5 +21,11 @@ public class Book extends Product {
 		} else {
 			return super.toString() + "\n";
 		}
-	}
+	
+	
+		
+		}
+	public String classType(){
+    	return "This is a book.";
+    }
 }
